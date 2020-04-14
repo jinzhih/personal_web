@@ -1,0 +1,44 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    width: $cardWidth;
+
+    &__image--shape{
+        height: 200px;
+        background: #63a163;
+        z-index: 0;
+        position: relative;
+        display: flex;
+       
+    }
+ 
+
+    &__overlay{
+        width: 100%;
+        z-index: 1;
+    }
+
+    &__personimage{
+       
+        width: 180px;
+        height: 180px;
+        position: relative;
+        bottom: -30px;
+        left: -400px;
+    }
+    &__title{
+        position: relative;
+        top: 30px;
+        right: 280px;
+        color: white;
+    }
+    &__body{
+        flex:1;
+        h3{
+            font-size: 24px;
+        }
+        p{
+            color: rgb(51, 45, 45);
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.navigation{
+
+   
+
+
+    @include MQ(S){
+
+        width: 100%;
+        &--left{
+            display: none;
+        }
+        &--right{
+            display: none;
+        }
+        &__mobilemenu{
+            display: none;
+        }
+        &__mobile{
+            background-color: #63a163;
+            margin-bottom: 50px;
+            height: 30px;
+            width: 100%;
+        }
+        &__mobilecontainer{
+         width: 100%;
+         float: left;
+         color: white;
+         font-size: 25px;
+        }
+        &__logo{
+         float: left;
+        }
+        &__toggle{
+         float: right;
+        }
+
+    }
+
+    @include MQ(M){
+        width: 100%;
+        &--left{
+            display: none;
+        }
+        &--right{
+            display: none;
+        }
+        &__mobilemenu{
+            display: none;
+        }
+        &__mobile{
+            background-color: #63a163;
+            margin-bottom: 50px;
+            height: 30px;
+            width: 100%;
+        }
+        &__mobilecontainer{
+         width: 100%;
+         float: left;
+         color: white;
+         font-size: 25px;
+        }
+        &__logo{
+         float: left;
+        }
+        &__toggle{
+         float: right;
+        }  
+        
+    }
+
+    @include MQ(L){
+        background-color:transparent;
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        font-family: sans-serif;
+        color: rgb(71, 65, 65);
+        padding: 5px;
+        width: 98%;
+        &__mobile{
+            display: none;
+        }
+      
+        &--right{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 400px;
+            
+        }
+        &__mobilecontainer{
+            display: none;
+        }
+
+    }
+}
